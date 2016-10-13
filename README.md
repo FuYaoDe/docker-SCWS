@@ -34,7 +34,7 @@ $ docker run --rm -it -v $(pwd)/XDB/dict.utf8.xdb:/custom.xdb scws-dev:0.0.3 scw
  Usage: scws [options] [[-i] input] [[-o] output]
  ```
  
- * _=-i string|file_ 要切分的字符串或文件，如不指定則程序自動讀取標準輸入，每輸入一行執行一次分詞
+ * _-i string|file_ 要切分的字符串或文件，如不指定則程序自動讀取標準輸入，每輸入一行執行一次分詞
  * _-o file_ 切分結果輸出保存的文件路徑，若不指定直接輸出到屏幕
  * _-c charset_ 指定分詞的字符集，默認是 gbk，可選 utf8
  * _-r file_ 指定規則集文件（規則集用於數詞、數字、專有名字、人名的識別）
