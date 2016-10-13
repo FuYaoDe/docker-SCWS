@@ -20,12 +20,12 @@ SCWS 由 [hightman](http://www.hightman.cn) 開發，並以 BSD 許可協議開�
 
 # 使用方法
 ```bash
-$ docker run --rm -it scws:latest scws -h
-$ docker run --rm -it scws:latest scws -i '这是分词的命令行工具' -c utf8 -d ./dict.utf8.xdb
+$ docker run --rm -it fuyaode/scws scws -h
+$ docker run --rm -it fuyaode/scws scws -i '这是分词的命令行工具' -c utf8 -d ./dict.utf8.xdb
 ```
 ### 使用自訂的辭典
 ```bash
-$ docker run --rm -it -v $(pwd)/XDB/dict.utf8.xdb:/custom.xdb scws-dev:0.0.3 scws -i '这是分词的命令行工具' -c utf8 -d /custom.xdb
+$ docker run --rm -it -v $(pwd)/XDB/dict.utf8.xdb:/custom.xdb fuyaode/scws scws -i '这是分词的命令行工具' -c utf8 -d /custom.xdb
 ```
 
 ### scws 這是分詞的命令行工具，執行 scws -h 可以看到詳細幫助說明。
